@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    padding: 40px;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#addButton {
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+#addButton:hover {
+    background: #218838;
+}
+
+#recipeList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#recipeList li {
+    background: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#addRecipForm {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#addRecipForm input,
+#addRecipForm textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    resize: vertical;
+}
+
+#addRecipForm button[type="submit"] {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#addRecipForm button[type="submit"]:hover {
+    background: #0069d9;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+#recipeList li {
+    display: flex;
+}
