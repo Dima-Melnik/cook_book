@@ -29,7 +29,7 @@ var cfg Configuration
 
 func initConfig() {
 	viper.AddConfigPath("./backend/config")
-	viper.SetConfigName("config")
+	viper.SetConfigName("conf")
 	viper.SetConfigType("yaml")
 
 	if err := viper.ReadInConfig(); err != nil {
